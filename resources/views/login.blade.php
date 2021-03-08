@@ -7,6 +7,10 @@
     <title>Login</title>
 </head>
 <body>
+    @include('navbar')
+    <?php 
+        $user = "min";
+    ?>
     <h1>Login</h1>
 </body>
 </html>

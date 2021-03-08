@@ -7,6 +7,7 @@
     <title>RegisMember</title>
 </head>
 <body>
+    @include('navbar')
     <h1>RegisMember</h1>
 </body>
 </html>
