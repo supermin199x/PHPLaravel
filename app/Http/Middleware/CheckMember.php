@@ -16,8 +16,8 @@ class CheckMember
      */
     public function handle(Request $request, Closure $next)
     {
-        if(!$request->user == "min"){
-            return redirect('/navbar');
+        if($request->user != "min"){
+            return redirect(route('navbar'));
         }
         return $next($request);
     }

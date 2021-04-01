@@ -16,5 +16,8 @@ use App\Http\Controllers\NavbarController;
 Route::get('/', [HomeController::class,'home'])->name('home');
 Route::get('/regismember', [RegismemberController::class,'regismember'])->name('regismember');
 Route::get('/regisorg',[RegisorgController::class,'regisorg'])->name('regisorg');
-Route::get('/login', [LoginController::class,'login'])->name('login')->middleware('check');
+Route::get('/login', [LoginController::class,'login'])->name('login');
 Route::get('/navbar', [NavbarController::class, 'navbar'])->name('navbar');
+Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
+    return view('dashboard');
+})->name('dashboard');

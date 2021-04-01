@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.navbar {
+    height: 5vh;
+    background-color: orangered;
+}
+.navbar ul {
+    display: flex;
+    width: 50%;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+.navbar a {
+    color: white;
+}
